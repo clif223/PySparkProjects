@@ -1,0 +1,20 @@
+
+DECLARE 
+	i text;
+	x integer = 0;
+	corrdiag text = '';
+	lastval text = 'm';
+BEGIN
+	FOREACH i IN ARRAY diag
+	LOOP
+		x = x + 1;
+	    lastval = ten from diagsmap where nine = diag[x];	
+		IF x = 1 THEN
+			corrdiag = lastval;
+			END IF;
+		IF x > 1 THEN
+			corrdiag = concat(corrdiag, ',', lastval);
+			END IF;
+	END LOOP;
+	RETURN corrdiag;
+END;
