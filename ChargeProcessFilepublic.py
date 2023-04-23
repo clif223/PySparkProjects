@@ -50,7 +50,7 @@ global dataframe
 global SQLprovidermappingResults
 global SQLlocationmappingResults
 dataframepath = r"ChargeCSVfile"
-mappingfilepath = r"ProviderMappingJSONfilr"
+mappingfilepath = r"ProviderMappingJSONfile"
 origfilepath = r"DiagnosisCSVfile"
 casenumber = str(33333)
 sqltablename = "Case" + casenumber + "ChargeFile"
@@ -82,8 +82,8 @@ ssmsURL =  f"jdbc:sqlserver://localhost:****;database={ssmsdatabase};encrypt=tru
 
 
 #Set file paths for the location and provider mapping
-providermappingfilepath = r"ProviderMappingJSONfilr"
-locationmappingfilepath = r"ProviderMappingJSONfilr"
+providermappingfilepath = r"ProviderMappingJSONfile"
+locationmappingfilepath = r"LocationMappingCSVfile"
 
 
 # In[445]:
